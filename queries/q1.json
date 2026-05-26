@@ -1,0 +1,62 @@
+[
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\assimp.md",
+    "score": 0.9382,
+    "text": "---\nname: \"Open Asset Import Library (assimp)\"\nslug: \"assimp\"\ncategory: \"BIM_IFC\"\nsummary: \"40+ 3D \ubaa8\ub378 \ud3ec\ub9f7 \ud1b5\ud569 import/export\"\ngithub: \"https://github.com/assimp/assimp\"\nlicense: \"BSD-3-Clause\"\nlanguage: \"C++\"\nkorean_applications:\n  - \"\ubc1c\uc8fc\ucc98 / \uc2dc\uacf5\uc0ac \uac00 \ubc1b\ub294 \ub2e4\uc591\ud55c 3D \ud3ec\ub9f7 (IFC / glTF / OBJ / FBX / STL / 3DS / DAE) \uc744 \ud55c \uc0ac\ub0b4 \ud45c\uc900 \ud3ec\ub9f7\uc73c\ub85c \uc790\ub3d9 \ubcc0\ud658\"\n  - \"BIM \u2194 \uac8c\uc784 \uc5d4\uc9c4 (Unity / Unreal) \u2194 \uc6f9 (Three.js) \ud30c\uc774\ud504\ub77c\uc778\uc758 *\ud3ec\ub9f7 \uc5b4\ub311\ud130*\"\nadded: 2026-05-25\n---\n\n\uc624\ud508\uc18c\uc2a4 3D \uc790\uc0b0 import / export \ub77c\uc774\ube0c\ub7ec\ub9ac. 40+ \ud3ec\ub9f7 (IFC, glTF, OBJ, FBX, STL, 3DS, DAE, PLY \ub4f1) \ud1b5\ud569. \u260512.9k.\n\nC++ \ucf54\uc5b4 + \ub2e4\uc5b8\uc5b4 \ubc14\uc778\ub529 (Python, C#, Java, JavaScript via emscripten).\n\n\ud575\uc2ec \uac00\uce58: *\ud3ec\ub9f7 \uc5b4\ub311\ud130*. CAD / BIM / \uac8c\uc784 / \uc6f9 \ub3c4\uad6c\uac00 \uac01\uc790 \ub2e4\ub978 \ud3ec\ub9f7\uc744 \uc4f0\ub294 \ud658\uacbd\uc5d0\uc11c assimp \uac00 \ubcc0\ud658 \ud5c8\ube0c.\n\n\uac01 \ud3ec\ub9f7\uc5d0 \ub300\ud574 1\uae09 \uc2dc\ubbfc\uc740 \uc544\ub2c8\uc9c0\ub9cc *\ubaa8\ub450 \ud55c \uc790\ub9ac\uc5d0\uc11c* \ub2e4\ub8ec\ub2e4\ub294 \uac15\uc810.\n\n\ud55c\uad6d BIM \u2194 \ubc1c\ud45c\uc6a9 \uc2dc\uac01\ud654 (Unity / Unreal / Three.js) \ud30c\uc774\ud504\ub77c\uc778, \uc0ac\ub0b4 \ud45c\uc900 \ud3ec\ub9f7 \ud1b5\ud569, \uc678\ubd80 \ubc1c\uc8fc\ucc98 \ub2e4\uc591\ud55c \ud3ec\ub9f7 \uc77c\uad04 \ubcc0\ud658\uc5d0 \uc801\ud569.\n",
+    "metadata": {
+      "extension": ".md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\assimp.md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\assimp.md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\ifcopenshell.md",
+    "score": 0.9188,
+    "text": "---\nname: \"IfcOpenShell\"\nslug: \"ifcopenshell\"\ncategory: \"BIM_IFC\"\nsummary: \"IFC \ud30c\uc77c \ud30c\uc2f1\u00b7\ud3b8\uc9d1\u00b7\ud3ec\ub9f7 \ubcc0\ud658\"\ngithub: \"https://github.com/IfcOpenShell/IfcOpenShell\"\nlicense: \"LGPL-3.0\"\nlanguage: \"Python / C++\"\nkorean_applications:\n  - \"\uc870\ub2ec\uccad BIM \ub0a9\ud488 IFC \ud30c\uc77c\uc744 \uc77c\uad04 \uac80\uc218\ud558\ub294 \uc0ac\ub0b4 \ub3c4\uad6c \uac1c\ubc1c\"\n  - \"\ud55c\uad6d\ud615 BIM \ub77c\uc774\ube0c\ub7ec\ub9ac (\ubcf4, \uae30\ub465, \uc2ac\ub798\ube0c \ud45c\uc900) IFC \uc790\ub3d9 \uc0dd\uc131 \ud30c\uc774\ud504\ub77c\uc778\"\nadded: 2026-05-25\n---\n\n\ud1a0\ub9c8\uc2a4 \ud06c\ub9ac\uc798\ub9ac (Thomas Krijnen) \uac00 \uc2dc\uc791\ud574 \ud604\uc7ac \ucee4\ubba4\ub2c8\ud2f0\uac00 \uc720\uc9c0\ud558\ub294 IFC \ucc98\ub9ac \uc778\ud504\ub77c.\n\nC++ \ucf54\uc5b4 + Python \ubc14\uc778\ub529 \uad6c\uc870. \ub300\ubd80\ubd84\uc758 \uc624\ud508\uc18c\uc2a4 IFC \ub3c4\uad6c\uac00 \ub0b4\ubd80\uc801\uc73c\ub85c \uc774 \ub77c\uc774\ube0c\ub7ec\ub9ac\ub97c \ubd80\ub978\ub2e4.\n\nIFC2x3 ~ IFC4.3 \uc2a4\ud0a4\ub9c8 \ud30c\uc2f1, geometry \ucd94\ucd9c (OpenCASCADE \uae30\ubc18), \uc18d\uc131 \ud3b8\uc9d1, \ub2e4\ub978 \ud3ec\ub9f7 (glTF, OBJ, COLLADA) \ubcc0\ud658\uc744 \ud55c \uc790\ub9ac\uc5d0\uc11c \ucc98\ub9ac\ud55c\ub2e4.\n\nBonsai (\uad6c BlenderBIM), MCP4IFC, web-ifc \ub4f1\uc758 \uc758\uc874 \ub77c\uc774\ube0c\ub7ec\ub9ac.\n\n\ud55c\uad6d\uc5d0\uc11c \uc790\uccb4 BIM \ub3c4\uad6c\ub97c \ub9cc\ub4dc\ub294 \ud300\uc758 \uccab \uc758\uc874\uc131.\n",
+    "metadata": {
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\ifcopenshell.md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\ifcopenshell.md",
+      "extension": ".md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\revitlookup.md",
+    "score": 0.7938,
+    "text": "---\nname: \"RevitLookup\"\nslug: \"revitlookup\"\ncategory: \"BIM_IFC\"\nsummary: \"Revit \ubaa8\ub378 \uac1d\uccb4 \ud0d0\uc0c9\u00b7\ub514\ubc84\uadf8\"\ngithub: \"https://github.com/lookup-foundation/RevitLookup\"\nlicense: \"MIT\"\nlanguage: \"C#\"\nkorean_applications:\n  - \"\uc0ac\ub0b4 Revit \uc790\ub3d9\ud654 (pyRevit / Dynamo) \uac1c\ubc1c \uc2dc *\ubaa8\ub378 \uac1d\uccb4 \uc18d\uc131 / ID / \uad00\uacc4* \uac80\uc0ac \ub3c4\uad6c\"\n  - \"Revit \ubaa8\ub378\uc758 *\uc65c \uc548 \ub418\uc9c0?* \ub514\ubc84\uae45 (\uac1d\uccb4 \ud55c \ud074\ub9ad \u2192 \ubaa8\ub4e0 \uc18d\uc131 / \uba54\uc18c\ub4dc \ud2b8\ub9ac)\"\nadded: 2026-05-25\n---\n\nRevit API \uc758 \uc0ac\uc2e4\uc0c1 \ud45c\uc900 *\ubaa8\ub378 \ud0d0\uc0c9\uae30 + \ub514\ubc84\uac70*. \u26051.4k.\n\nRevit \uc548\uc5d0\uc11c \uac1d\uccb4 \ud074\ub9ad \u2192 \uadf8 \uac1d\uccb4\uc758 \ubaa8\ub4e0 \uc18d\uc131 / \uba54\uc18c\ub4dc / \uad00\uacc4\ub97c \ud2b8\ub9ac \ud615\ud0dc\ub85c \uc2dc\uac01\ud654. *\ube14\ub799\ubc15\uc2a4\uc778 Revit \uac1d\uccb4\ub97c \ud22c\uba85\ud558\uac8c*.\n\npyRevit / Dynamo / \uc0ac\ub0b4 Revit Add-in \uac1c\ubc1c \uc2dc *\uc5b4\ub5a4 \uc18d\uc131\uc5d0 \uc5b4\ub5bb\uac8c \uc811\uadfc\ud558\ub294\uac00* \uac00 \uac00\uc7a5 \ud070 \ud559\uc2b5 \ube44\uc6a9 \u2014 RevitLookup \uc774 \uadf8 \ube44\uc6a9\uc744 \ud06c\uac8c \uc904\uc784.\n\n\uc790\uccb4 \uc0ac\uc6a9 + \ud6c4\ud559 \uad50\uc721\uc5d0\ub3c4 \uc801\ud569 (Revit API \ud559\uc2b5 \ub3c4\uad6c).\n\n\ud55c\uad6d BIM \uc790\ub3d9\ud654 (pyRevit / Dynamo / RevitAPI Add-in) \uac1c\ubc1c\uc790\uc758 *\ud544\uc218 \uc0ac\ub0b4 \ub3c4\uad6c*.\n",
+    "metadata": {
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\revitlookup.md",
+      "extension": ".md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\revitlookup.md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\hypar-elements.md",
+    "score": 0.7781,
+    "text": "---\nname: \"Hypar Elements\"\nslug: \"hypar-elements\"\ncategory: \"BIM_IFC\"\nsummary: \"\uac00\uc7a5 \uc791\uc740 BIM (\ucf54\ub4dc + JSON)\"\ngithub: \"https://github.com/hypar-io/Elements\"\nlicense: \"MIT\"\nlanguage: \"C#\"\nkorean_applications:\n  - \"Revit / IFC \uac00 \ubd80\ub2f4\uc2a4\ub7ec\uc6b4 *\uacbd\ub7c9 \uc0dd\uc131\uae30* \uc2dc\ub098\ub9ac\uc624 (\ucf54\ub4dc\ub85c \uc791\uc740 BIM \ub9cc\ub4e4\uc5b4 IFC / glTF \ucd9c\ub825)\"\n  - \"\uc0ac\ub0b4 *\uc0dd\uc131\ud615 \ub514\uc790\uc778* (generative design) \uc758 BIM \ucd9c\ub825 \ubc31\uc5d4\ub4dc\"\nadded: 2026-05-25\n---\n\nHypar \uac00 \ub9cc\ub4e0 *\ucd5c\uc18c\ud55c\uc758 \uc720\uc6a9\ud55c BIM* \ub77c\uc774\ube0c\ub7ec\ub9ac. \u2605398. \\\"the smallest useful BIM\\\".\n\n\ud575\uc2ec: BIM = \ud615\uc0c1 (Geometry) + \uba54\ud0c0 (Material / Type / Property). \uc774 \ub458\ub9cc\uc73c\ub85c *\ucda9\ubd84\ud55c BIM \uac1d\uccb4* (\ubcbd, \ubcf4, \uae30\ub465, \uc2ac\ub798\ube0c, \uacf5\uac04) \ub97c \ucf54\ub4dc\ub85c \uc0dd\uc131.\n\nC# / .NET \ucf54\uc5b4 + JSON \uc9c1\ub82c\ud654. STEP / glTF / IFC export. *Revit \uc758 \ubb34\uac70\uc6c0 / IFC \uc758 \ubcf5\uc7a1\ud568* \uc744 \uc6b0\ud68c.\n\nHypar \uc758 \ud074\ub77c\uc6b0\ub4dc \uc0dd\uc131\ud615 \ub514\uc790\uc778 \ubc31\uc5d4\ub4dc\ub85c \uc0ac\uc6a9\ub428.\n\n\ud55c\uad6d BIM R&D / \uc0ac\ub0b4 *\uc0dd\uc131\ud615 \ub514\uc790\uc778* (\ub300\uc548 \ud3c9\uac00, \uc635\uc158 \ube44\uad50) \uc758 BIM \ucd9c\ub825 \ubc31\uc5d4\ub4dc\ub85c \uc801\ud569. \uac00\ubcbc\uc6c0\uc774 \uac15\uc810.\n",
+    "metadata": {
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\hypar-elements.md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\hypar-elements.md",
+      "extension": ".md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\xeokit-bim-viewer.md",
+    "score": 0.7773,
+    "text": "---\nname: \"xeokit BIM Viewer\"\nslug: \"xeokit-bim-viewer\"\ncategory: \"VIZ_TWIN\"\nsummary: \"\ubc14\ub85c \uc4f0\ub294 IFC\u00b7BIM\u00b7\uc810\uad70 \uc6f9 \ubdf0\uc5b4\"\ngithub: \"https://github.com/xeokit/xeokit-bim-viewer\"\nlicense: \"AGPL-3.0\"\nlanguage: \"JavaScript\"\nkorean_applications:\n  - \"\uac10\ub9ac / \ubc1c\uc8fc\ucc98 \uc0ac\ub0b4 BIM \uac80\ud1a0 \ud3ec\ud138 (\ubcc4\ub3c4 \uac1c\ubc1c \uc5c6\uc774 IFC \ubaa8\ub378 \ub4dc\ub86d \u2192 \uc989\uc2dc \uac80\ud1a0)\"\n  - \"\ud604\uc7a5 \uac80\uce21\ud300\uc774 BCF \ud615\uc2dd\uc73c\ub85c issue \ub97c \ubaa8\ub378 \uc704\uc5d0 \ud540\ud558\uace0 \uc0ac\ub0b4 \uacf5\uc720\"\nadded: 2026-05-25\n---\n\nxeolabs \uac00 xeokit SDK \uc704\uc5d0 \ub9cc\ub4e0 *\ubc14\ub85c \uc4f8 \uc218 \uc788\ub294* BIM \ubdf0\uc5b4 \uc560\ud50c\ub9ac\ucf00\uc774\uc158.\n\nxeokit-sdk \uac00 \ub77c\uc774\ube0c\ub7ec\ub9ac (\uac1c\ubc1c\uc790\uac00 \ud1b5\ud569) \ub77c\uba74, BIM Viewer \ub294 \ud328\ud0a4\uc9c0\ub41c \uc644\uc131\ud488 (\uc0ac\ub0b4 \ud638\uc2a4\ud305 \u2192 \uc0ac\uc6a9\uc790\uac00 \ubaa8\ub378 \uc5c5\ub85c\ub4dc \u2192 \uc989\uc2dc \ubdf0).\n\n\uae30\ub2a5: IFC 2x3 / IFC 4 + \uc810\uad70 (LAS / LAZ) \ub3d9\uc2dc \ubdf0, \uac1d\uccb4 \uaca9\ub9ac / \ub2e8\uba74 / \uce21\uc815, BCF (BIM Collaboration Format) \uc774\uc288 \ud540 + \uc800\uc7a5 / \ubd88\ub7ec\uc624\uae30, \ub2e4\uc911 \ubaa8\ub378 \ub85c\ub529, \ubaa8\ubc14\uc77c \ub300\uc751.\n\nAGPL-3.0 \u2014 \uc790\uccb4 \ud638\uc2a4\ud305 \ubb34\ub8cc, \ubcc0\ud615\ud574\uc11c \uc678\ubd80 SaaS \ub85c \uc81c\uacf5\ud560 \uacbd\uc6b0 \ub77c\uc774\uc13c\uc2a4 \uc758\ubb34 \uac80\ud1a0 \ud544\uc694.\n\n\ud55c\uad6d \uac10\ub9ac\ubc95\uc778 / \ubc1c\uc8fc\ucc98 BIM \uac80\ud1a0\ud300\uc774 *\uac1c\ubc1c \ube44\uc6a9 \uc5c6\uc774* \uc0ac\ub0b4 BIM \uac80\ud1a0 \ud3ec\ud138\uc744 \uad6c\ucd95\ud558\ub824 \ud560 \ub54c \uac00\uc7a5 \ube60\ub978 \uc120\ud0dd\uc9c0.\n",
+    "metadata": {
+      "extension": ".md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\xeokit-bim-viewer.md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\xeokit-bim-viewer.md"
+    },
+    "graph_context": null
+  }
+]

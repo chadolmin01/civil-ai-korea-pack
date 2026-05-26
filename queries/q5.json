@@ -1,0 +1,62 @@
+[
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\README.md",
+    "score": 1.056,
+    "text": "# CIVIL AI Korea Pack\n\n> \uae00\ub85c\ubc8c \ud1a0\ubaa9\u00b7\uac74\uc124 AI \uc624\ud508\uc18c\uc2a4 **2108** \ud6c4\ubcf4 \u2192 **83** \ud050\ub808\uc774\uc158. \ub370\uc774\ud130 \uc790\uc0b0.\n\n(\uc790\ub3d9 \ubc1c\uad74 2059 + \uc218\ub3d9 \uc2dc\ub4dc 49 = 2108 \uace0\ub824 / 83 \uc120\ubcc4 / 2025 \ud0c8\ub77d)\n\n[civilai.kr](https://civilai.kr) \uc758 \ub77c\uc774\ube0c\ub7ec\ub9ac \uce74\ub4dc 83\uc7a5\uacfc *\uc120\ubcc4 \uacfc\uc815 \uc804\uccb4* \ub97c \uc790\uc5f0\uc5b4 \uc9c8\uc758 \uac00\ub2a5\ud55c \ud615\ud0dc\ub85c \uc815\ub9ac\ud55c OpenCrab \ud638\ud658 \ud329.\n\n## \ubb34\uc5c7\uc774 \uc774 \uc548\uc5d0\n\n- `selected/` \u2014 \ud050\ub808\uc774\uc158 83\uc7a5 \uce74\ub4dc (\ud55c\uad6d \uc801\uc6a9 \uc2dc\ub098\ub9ac\uc624 + \uba54\ud0c0\ub370\uc774\ud130)\n- `candidates.jsonl` \u2014 \uace0\ub824\ud55c \ubaa8\ub4e0 \ud6c4\ubcf4 2108 \uac1c (\uc790\ub3d9 2059 + \uc218\ub3d9 \uc2dc\ub4dc 49, \uc120\ubcc4 / \ud0c8\ub77d \uc0c1\ud0dc \ud3ec\ud568)\n- `selection_log.md` \u2014 4 \ub2e8\uacc4 \ud544\ud130 + \uc218\ub3d9 \uc2dc\ub4dc \ud480 + Lee \uc758 promotion \uc774\ub825\n- `rejected_patterns.md` \u2014 \uc790\uc8fc \ub098\uc628 \ud0c8\ub77d \uc0ac\uc720 \ud328\ud134 7 \uac00\uc9c0\n\n## OpenCrab \uc778\uc81c\uc2a4\ud2b8\n\n```bash\nopencrab ingest https://github.com/chadolmin01/civil-ai-korea-pack\n```\n\n## \uc790\uc5f0\uc5b4 \uc9c8\uc758 \uc608\uc2dc\n\n- \"\ub0b4\uac00 \ub204\ub77d\ud55c BIM \ub3c4\uad6c\uac00 \uc788\ub294\uc9c0 \uc810\uac80\ud574\uc918\"\n- \"\ub77c\uc774\uc13c\uc2a4 \ubd88\uba85\uc73c\ub85c \ud0c8\ub77d\ud55c \ub3c4\uad6c \uc911 \ub2e4\uc2dc \ubd10\uc57c \ud560 \ud6c4\ubcf4\ub294?\"\n- \"\u26051k \ubbf8\ub9cc\uc778\ub370 83\uac1c\uc5d0 \ud3ec\ud568\ub41c \ub3c4\uad6c\ub4e4\uc758 \uacf5\ud1b5 \uc120\ubcc4 \uc774\uc720\ub294?\"\n- \"\uce21\ub7c9 / GIS 1\ucc28 \ud1b5\uacfc\ud588\uc9c0\ub9cc \ucd5c\uc885 \ud0c8\ub77d\ud55c \ub3c4\uad6c \ud328\ud134\uc740?\"\n- \"\ud55c\uad6d KDS \uac80\uc99d \uc6cc\ud06c\ud50c\ub85c\uc6b0\uc5d0 \ubb36\uc744 \uc218 \uc788\ub294 \ub3c4\uad6c \uc870\ud569\uc740?\"\n\n## \uac31\uc2e0\n\n\uc6d0\ubcf8 \uc0ac\uc774\ud2b8 ([civilai.kr](https://civilai.kr)) \uc758 `src/content/library/ko/` \uac00 source of truth.\n\uc774 \ud329\uc740 \uc0ac\uc774\ud2b8 repo \uc758 `scripts/build-pack.ts` \ub85c *\uc790\ub3d9 \uc0dd\uc131\ub41c \ud30c\uc0dd\ubb3c*.\n\n## \ub77c\uc774\uc13c\uc2a4\n\nCC BY-SA 4.0 \u2014 \ucf58\ud150\uce20 \uc790\uc720 \uc0ac\uc6a9, \ubcc0\uacbd \uc2dc \uac19\uc740 \ub77c\uc774\uc13c\uc2a4\ub85c \uacf5\uc720.\n\n## \ub9cc\ub4e0 \uc0ac\ub78c\n\n- [Lee (Seongmin)](https://tryseongmin.com) \u00b7 [@trySeongmin](https://www.threads.com/@tryseongmin)\n- \uc6d0\ubcf8 \uc0ac\uc774\ud2b8: [civilai.kr](https://civilai.kr)\n- \uc774\uc288 / \uc81c\uc548: GitHub Issues\n\n## \uc601\uac10\n\n- [@alex_ai_mcp](https://github.com/AlexAI-MCP) \uc758 OpenCrab \u2014 \uc790\uc5f0\uc5b4 \uc9c8\uc758 \ub370\uc774\ud130 \ud329 \uc778\ud504\ub77c\n- [@logotekton](https://www.threads.com/@logotekton) \u2014 *\ud050\ub808\uc774\uc158 \uc790\uccb4\uac00 \ub370\uc774\ud130 \uc790\uc0b0* \uad00\uc810\n",
+    "metadata": {
+      "source_path": "C:\\project\\civil-ai-korea-pack\\README.md",
+      "extension": ".md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\README.md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\mcp4ifc.md",
+    "score": 0.9066,
+    "text": "---\nname: \"MCP4IFC\"\nslug: \"mcp4ifc\"\ncategory: \"BIM_IFC\"\nsummary: \"\uc790\uc5f0\uc5b4\ub85c IFC \ubaa8\ub378 \uac80\uc99d \ubc0f \ud3b8\uc9d1\"\ngithub: \"https://github.com/show2instruct/mcp4ifc\"\npaper: \"https://arxiv.org/abs/2511.05533\"\nlicense: \"MIT\"\nlanguage: \"Python\"\nkorean_applications:\n  - \"KDS 14 20 50 (\ucf58\ud06c\ub9ac\ud2b8 \ucca0\uadfc\uc0c1\uc138) \uc870\ud56d\uc744 IFC \ubaa8\ub378\uc5d0\uc11c \uc790\ub3d9 \uac80\uc99d\"\n  - \"BF (\uc7a5\uc560\ubb3c \uc5c6\ub294 \uc0dd\ud65c\ud658\uacbd) \uc778\uc99d \ud56d\ubaa9\uc744 IFC \uc18d\uc131 \uae30\ubc18\uc73c\ub85c \uc790\ub3d9 \uc810\uac80\"\nadded: 2026-05-25\n---\n\n\ub3c5\uc77c University of Rostock \uacfc TU Clausthal \uacf5\ub3d9 \uc5f0\uad6c\ud300\uc774 \ub9cc\ub4e0 IFC \uc804\uc6a9 MCP \uc11c\ubc84.\n\nPython \uc73c\ub85c \uc791\uc131\ub410\uace0, LLM (Claude / GPT \ub4f1) \uc774 \uc790\uc5f0\uc5b4\ub85c IFC \ubaa8\ub378\uc744 \uc9c8\uc758\u00b7\ud3b8\uc9d1\ud558\ub3c4\ub85d \ub3c4\uad6c\ub97c \ub178\ucd9c\ud55c\ub2e4.\n\n\ud575\uc2ec\uc740 IFC \uc2a4\ud0a4\ub9c8\ub97c MCP tool \ub85c \ub9e4\ud551\ud558\uc5ec, \"3\uce35 \uc2ac\ub798\ube0c \ub450\uaed8\ub97c \uc870\ud68c\ud574\uc918\" \uac19\uc740 \uc694\uccad\uc744 IfcOpenShell \ud638\ucd9c\ub85c \ubcc0\ud658\ud558\ub294 \uac83.\n\n\ud559\uc220 \ub17c\ubb38 (arXiv 2511.05533) \uc73c\ub85c\ub3c4 \ubc1c\ud45c\ub410\ub2e4.\n\n\ud55c\uad6d BIM \uc2e4\ubb34\uc790\uac00 KDS / BF \uac19\uc740 \ud55c\uad6d \ud45c\uc900 \uac80\uc99d \uc6cc\ud06c\ud50c\ub85c\uc6b0\ub97c LLM \uc73c\ub85c \uc790\ub3d9\ud654\ud558\ub824 \ud560 \ub54c \uc2dc\uc791\uc810.\n",
+    "metadata": {
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\mcp4ifc.md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\mcp4ifc.md",
+      "extension": ".md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\text-to-cad.md",
+    "score": 0.853,
+    "text": "---\nname: \"Text-to-CAD\"\nslug: \"text-to-cad\"\ncategory: \"AGENT_WORKFLOW\"\nsummary: \"\uc790\uc5f0\uc5b4 \u2192 CAD / \ub85c\ubd07 / \ud558\ub4dc\uc6e8\uc5b4 \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0ac\"\ngithub: \"https://github.com/earthtojake/text-to-cad\"\nlicense: \"MIT\"\nlanguage: \"JavaScript\"\nkorean_applications:\n  - \"\uc0ac\ub0b4 BIM / CAD \uc6cc\ud06c\ud50c\ub85c\uc6b0\uc758 *\uc790\uc5f0\uc5b4 \uba85\ub839* \uc778\ud130\ud398\uc774\uc2a4 (\uc608: \\\"H300 \ubcf4 \uac15\ucd95 30m \ubc30\uce58\\\")\"\n  - \"Claude Code \uc640 \uacb0\ud569\ud574 \ud55c\uad6d \uc2dc\ubc29\uc11c / KDS \uc758 \uc790\uc5f0\uc5b4 \uc870\ud56d\uc744 CAD \ubaa8\ub378 \uc791\uc5c5\uc73c\ub85c \ubcc0\ud658\"\nadded: 2026-05-25\n---\n\nCAD / \ub85c\ubd07 / \ud558\ub4dc\uc6e8\uc5b4 \ub514\uc790\uc778\uc744 \uc790\uc5f0\uc5b4\ub85c \ub2e4\ub8e8\ub294 *AI \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0ac \ubaa8\uc74c*. \u26054.6k.\n\nDDC Skills (\uac74\uc124 \uc790\ub3d9\ud654) \uac00 *Claude Code \uc2a4\ud0ac \ud328\ud0a4\uc9c0* \ub77c\uba74, Text-to-CAD \ub294 *CAD / \ud558\ub4dc\uc6e8\uc5b4* \ud2b9\ud654 \uc2a4\ud0ac \uc14b. \uc790\uc5f0\uc5b4 \u2192 \ud615\uc0c1 \uc0dd\uc131 / \ubcc0\ud615 / \uc870\ub9bd / \uac80\ud1a0 \ud750\ub984 \uc790\ub3d9\ud654.\n\nCadQuery / FreeCAD / Rhino \ub4f1 \ub2e4\uc591\ud55c CAD \ub3c4\uad6c\uc640 \uc5f0\uacb0 \uac00\ub2a5. \uc0ac\ub0b4 \ud658\uacbd\uc758 *\ube44\uc8fc\uc5bc \ud504\ub85c\uadf8\ub798\ubc0d \uc704 LLM \ub808\uc774\uc5b4*.\n\n\ud55c\uad6d BIM R&D / \uc0ac\ub0b4 \uc790\ub3d9\ud654 \ud300 \uc774 Claude Code + CAD \uacb0\ud569 \ud750\ub984 (\uc608: \\\"\uc774 H-beam \uc744 \uac15\ucd95 30m \ubc30\uce58\ud558\uace0 KDS 14 31 00 \uac80\ud1a0\\\") \uc758 \ucd9c\ubc1c\uc810\uc73c\ub85c \ud65c\uc6a9.\n",
+    "metadata": {
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\text-to-cad.md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\text-to-cad.md",
+      "extension": ".md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\hollowrc.md",
+    "score": 0.79,
+    "text": "---\nname: \"HollowRC\"\nslug: \"hollowrc\"\ncategory: \"STRUCTURE_SIM\"\nsummary: \"\uc911\uacf5 \ucca0\uadfc\ucf58\ud06c\ub9ac\ud2b8 \ub2e8\uba74 \uc124\uacc4 / \uac80\ud1a0\"\ngithub: \"https://github.com/kleissl/HollowRC\"\nlicense: \"GPL-3.0\"\nlanguage: \"Python\"\nkorean_applications:\n  - \"\uad50\uac01 / \ucf58\ud06c\ub9ac\ud2b8 \ubc15\uc2a4 \uac70\ub354 \ub4f1 *\uc911\uacf5 RC* \ub2e8\uba74\uc758 \uacb0\ud569 \ud558\uc911 (\ucd95\ub825 + \ud728 + \ube44\ud2c2 + \uc804\ub2e8) \uac80\ud1a0\"\n  - \"Eurocode 2 \uae30\ubc18\uc774\ub77c KDS 14 20 50 \uc640 \ub9e4\ud551\ud558\uc5ec \ud55c\uad6d \uc2dd \uc0ac\ub0b4 \ub3c4\uad6c\ub85c \ud3ec\ud305\"\nadded: 2026-05-25\n---\n\n\ucf54\ud39c\ud558\uac90 \uacf5\ub300 Niels Kleissl \uc774 \ub9cc\ub4e0 *\uc911\uacf5 RC \ub2e8\uba74* \uc804\uc6a9 \uc124\uacc4 / \uac80\ud1a0 Python \ub3c4\uad6c. \u260532.\n\n\ud575\uc2ec \uac00\uce58: \uc77c\ubc18 RC \uac00 \uc544\ub2cc *\uc911\uacf5 \ub2e8\uba74* (Box / Hollow) \u2014 \uad50\uac01, \ubc15\uc2a4 \uac70\ub354, \uc639\ubcbd \ud5e4\ub4dc \ub4f1\uc758 \uacb0\ud569 \ud558\uc911 (N + M + V + T) \uac80\ud1a0.\n\nEurocode 2 \uae30\ubc18. \uc77c\ubc18 FEM \ub3c4\uad6c (Pynite, OpenSees) \uac00 *\ud574\uc11d* \uc774\ub77c\uba74 HollowRC \ub294 *\ub2e8\uba74 \uac80\ud1a0* \uc804\ubb38.\n\nGUI \ub3c4 \uc788\uc5b4 \ud559\uc2b5 \uace1\uc120 \uc791\uc74c. Python API \ub85c \uc790\ub3d9\ud654\ub3c4 \uac00\ub2a5.\n\n\ud55c\uad6d \ud1a0\ubaa9 (\ub3c4\ub85c\uacf5\uc0ac, \ud55c\uad6d\ucca0\ub3c4) \uc758 \uad50\uac01 / \ubc15\uc2a4 \uac70\ub354 \uac80\ud1a0 \uc790\ub3d9\ud654\uc5d0 \uc801\ud569. \ud55c\uad6d KDS \uc2dd \ud3ec\ud305 \ud6c4 \uc0ac\ub0b4 \ub3c4\uad6c\ud654.\n",
+    "metadata": {
+      "extension": ".md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\hollowrc.md",
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\hollowrc.md"
+    },
+    "graph_context": null
+  },
+  {
+    "source": "vector",
+    "node_id": "C:\\project\\civil-ai-korea-pack\\selected\\structuralcodes.md",
+    "score": 0.7744,
+    "text": "---\nname: \"structuralcodes\"\nslug: \"structuralcodes\"\ncategory: \"STRUCTURE_SIM\"\nsummary: \"Eurocode \uad6c\uc870 \uacc4\uc0b0\uc744 Python \uc73c\ub85c\"\ngithub: \"https://github.com/fib-international/structuralcodes\"\nlicense: \"Apache-2.0\"\nlanguage: \"Python\"\nkorean_applications:\n  - \"Eurocode \uc2dd\uc744 *\ud15c\ud50c\ub9bf* \uc73c\ub85c \ud55c\uad6d KDS / KCS \uc2dd \uc0ac\ub0b4 \ub77c\uc774\ube0c\ub7ec\ub9ac \uc791\uc131 (Blueprints \uc640 \uc870\ud569)\"\n  - \"\ucf58\ud06c\ub9ac\ud2b8 / \uac15\uc7ac \ubd80\uc7ac \uac80\ud1a0\ub97c \ucf54\ub4dc \ub2e8\uc704\ub85c \uc790\ub3d9\ud654 (LaTeX / Markdown \uac80\ud1a0\uc11c \uc790\ub3d9 \ucd9c\ub825)\"\nadded: 2026-05-25\n---\n\nfib (International Federation for Structural Concrete) \uac00 \uacf5\uc2dd \uc720\uc9c0\ud558\ub294 Eurocode \uad6c\uc870 \uacc4\uc0b0 Python \ub77c\uc774\ube0c\ub7ec\ub9ac. \u2605273.\n\nBlueprints \uac00 \uc77c\ubc18 \ud1a0\ubaa9 \uacc4\uc0b0\uc2dd \ubaa8\uc74c\uc774\ub77c\uba74, structuralcodes \ub294 *fib \uacf5\uc2dd* \ud45c\uc900 \uc2dd (Eurocode 2 / Model Code 2010 / FRP \ubcf4\uac15 \ub4f1) \uad6c\ud604\uccb4.\n\n\uac01 \uc2dd\uc774 \ub2e8\uc77c \ud568\uc218 + \uc785\ub825 \ub2e8\uc704 (Pint) + \ucd9c\ucc98 \uc778\uc6a9 (fib bulletin \ubc88\ud638) \uae4c\uc9c0 \ubc15\ud600\uc788\uc5b4 \uac80\ud1a0 \ucd94\uc801\uc131 \ucd5c\uc0c1\uae09.\n\n\ud55c\uad6d KDS (\uad6c\uc870\uc124\uacc4\uae30\uc900) \uac00 Eurocode \ub97c \ub9ce\uc774 \ub530\ub790\uae30 \ub54c\ubb38\uc5d0 \ud55c\uad6d \uc2dd \uc0ac\ub0b4 \ub77c\uc774\ube0c\ub7ec\ub9ac \uc791\uc131 \uc2dc *\ucd5c\uace0\uc758 \ud15c\ud50c\ub9bf*.\n\n\uad6c\uc870 \ucee8\uc124\ud305 / \uc124\uacc4\uc0ac / \ud559\uc220 \uc5f0\uad6c\uc758 \uc0ac\ub0b4 \uac80\ud1a0 \ucf54\ub4dc \uc790\uc0b0\ud654 \uc2dc \ucd9c\ubc1c\uc810.\n",
+    "metadata": {
+      "source_path": "C:\\project\\civil-ai-korea-pack\\selected\\structuralcodes.md",
+      "extension": ".md",
+      "source_id": "C:\\project\\civil-ai-korea-pack\\selected\\structuralcodes.md"
+    },
+    "graph_context": null
+  }
+]
