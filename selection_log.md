@@ -1,9 +1,18 @@
 # 선별 과정 로그
 
-원본 후보 **2059** 개 → 최종 큐레이션 **83** 장.
-(후보 중 ko/ 에 promotion 된 카드: 34 · 일부 카드는 후보 발굴 전 수동 추가)
+총 후보 **2108** 개 → 최종 큐레이션 **83** 장.
 
-## 발굴 파이프라인
+| 풀 | 개수 | 출처 |
+|---|---|---|
+| 자동 발굴 풀 | 2059 | `scripts/discover.ts` (awesome list 5 + GitHub topic 32 + 풀텍스트 search 9) |
+| 수동 시드 풀 | 49 | Lee 의 초기 큐레이션 + 사이트 빌드 중 직접 추가 (discover 전 시점) |
+| **고려한 모든 후보** | **2108** | (위 두 풀의 합집합) |
+| 선별 (ko/) | 83 | 자동 풀에서 promotion 34 + 수동 시드 49 |
+| 탈락 | 2025 | 자동 풀의 미선별분 |
+
+candidates.jsonl 의 각 줄은 위 풀의 한 후보. `status: selected|rejected` 표기. 수동 시드는 `sources: ["manual:seed"]` 로 구분.
+
+## 발굴 파이프라인 (자동 2059)
 
 ### 1차 — 자동 발굴 (`scripts/discover.ts`)
 
@@ -12,7 +21,7 @@
 - GitHub topic 검색 32개 (`topic:bim`, `topic:ifc`, `topic:cad`, `topic:point-cloud`, `topic:structural-analysis` 등)
 - GitHub 풀텍스트 검색 9개 (`civil+engineering+language:python+stars:>50` 등)
 
-결과: **2059** 개 후보 (이미 ko/ + `_drafts/` 에 있는 것은 자동 제외)
+결과: **2059** 개 후보 (사이트의 기존 ko/ + `_drafts/` 에 있는 것은 자동 제외)
 
 ### 2차 — 자동 카테고리 추정 (`scripts/score-and-draft.ts`)
 
@@ -30,7 +39,12 @@
 자동 등급 ★★★ 부터 *수동 검수* 후 `_drafts/auto/` → `src/content/library/ko/` 이동.
 각 카드의 한국 적용 시나리오 (KDS / KCS / BF / KOSHA 매핑) 는 자동이 아닌 *Lee 의 도메인 판단*.
 
-최종 큐레이션 83 카드.
+자동 풀에서 promotion: **34** 카드.
+
+## 수동 시드 풀 (49)
+
+사이트 초기에 Lee + 사이트 빌드 중 직접 GitHub 검색 / WebFetch 로 발굴한 카드. discover 파이프라인 전 시점이라 candidates.jsonl 의 자동 풀에 없음.
+이번 빌드 시 retroactive 하게 `sources: ["manual:seed"]` 로 표기하여 candidates.jsonl 에 포함.
 
 ## 최근 promotion 이력 (git log 추출)
 
@@ -75,12 +89,3 @@
 - **AGENT_WORKFLOW**: 7
 - **SPEC_REVIEW**: 2
 - **DRAWING_OCR**: 2
-
-## 등급별 분포 (자동 큐 `_drafts/_QUEUE.md` 기준)
-
-- ★★★: 약 76
-- ★★: 약 487
-- ★: 약 908
-- 자동 폐기 (no category / fetch fail): 약 588
-
-(2059 후보 중 588 ≈ 0 = 모든 후보가 등급 받음)

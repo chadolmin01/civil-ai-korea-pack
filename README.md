@@ -1,14 +1,16 @@
 # CIVIL AI Korea Pack
 
-> 글로벌 토목·건설 AI 오픈소스 2059 후보 → 83 큐레이션. 데이터 자산.
+> 글로벌 토목·건설 AI 오픈소스 **2108** 후보 → **83** 큐레이션. 데이터 자산.
 
-[civilai.kr](https://civilai.kr) 의 라이브러리 카드 83장과 *선별 과정* 을 자연어 질의 가능한 형태로 정리한 OpenCrab 호환 팩.
+(자동 발굴 2059 + 수동 시드 49 = 2108 고려 / 83 선별 / 2025 탈락)
+
+[civilai.kr](https://civilai.kr) 의 라이브러리 카드 83장과 *선별 과정 전체* 를 자연어 질의 가능한 형태로 정리한 OpenCrab 호환 팩.
 
 ## 무엇이 이 안에
 
 - `selected/` — 큐레이션 83장 카드 (한국 적용 시나리오 + 메타데이터)
-- `candidates.jsonl` — 발굴 후보 2059 개 (선별 / 탈락 상태 포함)
-- `selection_log.md` — 4 단계 필터 + Lee 의 수동 promotion 이력
+- `candidates.jsonl` — 고려한 모든 후보 2108 개 (자동 2059 + 수동 시드 49, 선별 / 탈락 상태 포함)
+- `selection_log.md` — 4 단계 필터 + 수동 시드 풀 + Lee 의 promotion 이력
 - `rejected_patterns.md` — 자주 나온 탈락 사유 패턴 7 가지
 
 ## OpenCrab 인제스트
