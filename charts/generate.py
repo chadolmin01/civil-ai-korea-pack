@@ -89,15 +89,15 @@ def funnel_chart():
     )
     fig.text(
         0.05,
-        0.91,
+        0.89,
         "2,108 후보 → 83 큐레이션 (자동 2,059 + 수동 시드 49)",
         fontsize=10,
         color=MUTED,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    fig.subplots_adjust(top=0.82, bottom=0.10, left=0.18, right=0.96)
     out = DIR / "funnel.png"
-    plt.savefig(out, dpi=160, facecolor=BG, bbox_inches="tight")
+    plt.savefig(out, dpi=160, facecolor=BG)
     plt.close()
     print(f"wrote {out}")
 
@@ -163,10 +163,10 @@ def category_chart():
         fontweight="bold",
         color=FG,
     )
-    fig.text(0.05, 0.91, f"8 카테고리 enum 고정 · 총 {sum(values)}장", fontsize=10, color=MUTED)
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    fig.text(0.05, 0.89, f"8 카테고리 enum 고정 · 총 {sum(values)}장", fontsize=10, color=MUTED)
+    fig.subplots_adjust(top=0.82, bottom=0.10, left=0.20, right=0.96)
     out = DIR / "category.png"
-    plt.savefig(out, dpi=160, facecolor=BG, bbox_inches="tight")
+    plt.savefig(out, dpi=160, facecolor=BG)
     plt.close()
     print(f"wrote {out}")
 
@@ -230,7 +230,7 @@ def sources_chart():
     fig.suptitle(
         "후보 발굴 출처",
         x=0.05,
-        y=0.94,
+        y=0.95,
         ha="left",
         fontsize=15,
         fontweight="bold",
@@ -238,14 +238,14 @@ def sources_chart():
     )
     fig.text(
         0.05,
-        0.88,
+        0.86,
         "한 후보가 여러 출처에 잡힐 수 있음 (corroboration = 신호 강도)",
         fontsize=10,
         color=MUTED,
     )
-    plt.tight_layout(rect=(0, 0, 1, 0.85))
+    fig.subplots_adjust(top=0.76, bottom=0.14, left=0.22, right=0.96)
     out = DIR / "sources.png"
-    plt.savefig(out, dpi=160, facecolor=BG, bbox_inches="tight")
+    plt.savefig(out, dpi=160, facecolor=BG)
     plt.close()
     print(f"wrote {out}")
 
