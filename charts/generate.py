@@ -250,7 +250,128 @@ def sources_chart():
     print(f"wrote {out}")
 
 
+def social_preview():
+    """GitHub social preview image — 1280x640 권장 spec."""
+    fig = plt.figure(figsize=(12.8, 6.4), facecolor=BG)
+
+    # Left half: title + tagline + stats
+    ax_text = fig.add_axes([0.05, 0.0, 0.45, 1.0])
+    ax_text.set_facecolor(BG)
+    ax_text.axis("off")
+
+    ax_text.text(
+        0.0, 0.82,
+        "CIVIL AI Korea Pack",
+        fontsize=34,
+        fontweight="bold",
+        color=FG,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+    ax_text.text(
+        0.0, 0.70,
+        "글로벌 토목·건설 AI 오픈소스 큐레이션",
+        fontsize=15,
+        color=MUTED,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+
+    # Stats row 1 — 2,108 후보
+    ax_text.text(
+        0.0, 0.42,
+        "2,108",
+        fontsize=64,
+        fontweight="bold",
+        color=FG,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+    ax_text.text(
+        0.0, 0.34,
+        "후보",
+        fontsize=15,
+        color=MUTED,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+
+    # Stats row 2 — → 83 큐레이션
+    ax_text.text(
+        0.0, 0.13,
+        "→ 83",
+        fontsize=64,
+        fontweight="bold",
+        color=ACCENT,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+    ax_text.text(
+        0.0, 0.05,
+        "큐레이션",
+        fontsize=15,
+        color=MUTED,
+        family="Malgun Gothic",
+        transform=ax_text.transAxes,
+    )
+
+    # Right half: mini funnel (5 bars, no labels)
+    ax_bars = fig.add_axes([0.55, 0.18, 0.40, 0.64])
+    ax_bars.set_facecolor(BG)
+    from matplotlib.colors import to_rgba
+    stages = [2059, 2108, 1471, 76, 83]
+    labels = ["자동", "+ 시드", "카테고리", "★★★", "큐레이션"]
+    y_pos = list(range(len(stages)))[::-1]
+    alphas = [1.0, 0.85, 0.65, 0.45, 1.0]
+    colors = [
+        to_rgba(ACCENT if i == len(stages) - 1 else FG, alpha=alphas[i])
+        for i in range(len(stages))
+    ]
+    ax_bars.barh(y_pos, stages, color=colors, height=0.65)
+    for i, (lab, val) in enumerate(zip(labels, stages)):
+        ax_bars.text(
+            -50,
+            y_pos[i],
+            lab,
+            va="center",
+            ha="right",
+            fontsize=11,
+            color=FG,
+            family="Malgun Gothic",
+        )
+        ax_bars.text(
+            val + 40,
+            y_pos[i],
+            f"{val:,}",
+            va="center",
+            fontsize=11,
+            fontweight="bold",
+            color=FG,
+            family="JetBrains Mono",
+        )
+    ax_bars.set_xlim(0, max(stages) * 1.20)
+    ax_bars.set_yticks([])
+    ax_bars.set_xticks([])
+    for spine in ["top", "right", "left", "bottom"]:
+        ax_bars.spines[spine].set_visible(False)
+
+    # Footer — bottom right to avoid overlap with stats
+    fig.text(
+        0.55, 0.06,
+        "civilai.kr  ·  자연어 질의 가능한 데이터 자산 (OpenCrab 친화)",
+        fontsize=11,
+        color=MUTED,
+        family="Malgun Gothic",
+    )
+
+    out = DIR / "social-preview.png"
+    plt.savefig(out, dpi=100, facecolor=BG)
+    plt.close()
+    print(f"wrote {out}")
+
+
 if __name__ == "__main__":
     funnel_chart()
     category_chart()
     sources_chart()
+    social_preview()
