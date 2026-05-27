@@ -251,117 +251,108 @@ def sources_chart():
 
 
 def social_preview():
-    """GitHub social preview image — 1280x640 권장 spec."""
+    """GitHub social preview — 한국 표준 ↔ 오픈소스 매핑 우선 (1280x640)."""
     fig = plt.figure(figsize=(12.8, 6.4), facecolor=BG)
+    ax = fig.add_axes([0.0, 0.0, 1.0, 1.0])
+    ax.set_facecolor(BG)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
 
-    # Left half: title + tagline + stats
-    ax_text = fig.add_axes([0.05, 0.0, 0.45, 1.0])
-    ax_text.set_facecolor(BG)
-    ax_text.axis("off")
-
-    ax_text.text(
-        0.0, 0.82,
+    # Header — title + tagline
+    ax.text(
+        0.05, 0.90,
         "CIVIL AI Korea Pack",
-        fontsize=34,
+        fontsize=30,
         fontweight="bold",
         color=FG,
         family="Malgun Gothic",
-        transform=ax_text.transAxes,
     )
-    ax_text.text(
-        0.0, 0.70,
-        "글로벌 토목·건설 AI 오픈소스 큐레이션",
-        fontsize=15,
+    ax.text(
+        0.05, 0.82,
+        "글로벌 토목·건설 AI 오픈소스  ↔  한국 표준 1:1 매핑",
+        fontsize=14,
         color=MUTED,
         family="Malgun Gothic",
-        transform=ax_text.transAxes,
     )
 
-    # Stats row 1 — 2,108 후보
-    ax_text.text(
-        0.0, 0.42,
-        "2,108",
-        fontsize=64,
-        fontweight="bold",
-        color=FG,
-        family="Malgun Gothic",
-        transform=ax_text.transAxes,
-    )
-    ax_text.text(
-        0.0, 0.34,
-        "후보",
-        fontsize=15,
-        color=MUTED,
-        family="Malgun Gothic",
-        transform=ax_text.transAxes,
-    )
-
-    # Stats row 2 — → 83 큐레이션
-    ax_text.text(
-        0.0, 0.13,
-        "→ 83",
-        fontsize=64,
-        fontweight="bold",
-        color=ACCENT,
-        family="Malgun Gothic",
-        transform=ax_text.transAxes,
-    )
-    ax_text.text(
-        0.0, 0.05,
-        "큐레이션",
-        fontsize=15,
-        color=MUTED,
-        family="Malgun Gothic",
-        transform=ax_text.transAxes,
-    )
-
-    # Right half: mini funnel (5 bars, no labels)
-    ax_bars = fig.add_axes([0.55, 0.18, 0.40, 0.64])
-    ax_bars.set_facecolor(BG)
-    from matplotlib.colors import to_rgba
-    stages = [2059, 2108, 1471, 76, 83]
-    labels = ["자동", "+ 시드", "카테고리", "★★★", "큐레이션"]
-    y_pos = list(range(len(stages)))[::-1]
-    alphas = [1.0, 0.85, 0.65, 0.45, 1.0]
-    colors = [
-        to_rgba(ACCENT if i == len(stages) - 1 else FG, alpha=alphas[i])
-        for i in range(len(stages))
+    # 5 매핑 rows
+    mappings = [
+        ("KDS 14 20 50",        "콘크리트 철근상세 자동 검증",   "MCP4IFC + IfcOpenShell"),
+        ("KDS 41 17 00",        "내진 비선형 시간이력 해석",     "OpenSees"),
+        ("조달청 BIM 납품",      "IFC 일괄 검수",                "IfcOpenShell"),
+        ("BF 인증",             "출입구 / 경사로 자동 점검",     "MCP4IFC"),
+        ("드론 LiDAR → 토공",   "지표면 추출 + DEM 생성",        "CSFTools"),
     ]
-    ax_bars.barh(y_pos, stages, color=colors, height=0.65)
-    for i, (lab, val) in enumerate(zip(labels, stages)):
-        ax_bars.text(
-            -50,
-            y_pos[i],
-            lab,
+
+    # row 영역: y = 0.10 ~ 0.72 (0.62 단위)
+    n = len(mappings)
+    row_h = 0.62 / n
+    top_y = 0.72
+
+    # Column x positions
+    x_std = 0.05      # 한국 표준 코드 (좌)
+    x_scenario = 0.30 # 시나리오 설명 (중-좌)
+    x_arrow = 0.58    # 화살표
+    x_repo = 0.63     # 오픈소스 (우)
+
+    for i, (std, scenario, repo) in enumerate(mappings):
+        y = top_y - (i + 0.5) * row_h
+        # left: 표준 코드 (bold accent)
+        ax.text(
+            x_std, y,
+            std,
+            fontsize=15,
+            fontweight="bold",
+            color=ACCENT,
+            family="Malgun Gothic",
             va="center",
-            ha="right",
-            fontsize=11,
+        )
+        # middle: 시나리오 설명
+        ax.text(
+            x_scenario, y,
+            scenario,
+            fontsize=12,
             color=FG,
             family="Malgun Gothic",
-        )
-        ax_bars.text(
-            val + 40,
-            y_pos[i],
-            f"{val:,}",
             va="center",
-            fontsize=11,
+        )
+        # arrow
+        ax.text(
+            x_arrow, y,
+            "→",
+            fontsize=18,
+            color=MUTED,
+            family="Malgun Gothic",
+            va="center",
+        )
+        # right: 오픈소스 repo
+        ax.text(
+            x_repo, y,
+            repo,
+            fontsize=14,
             fontweight="bold",
             color=FG,
-            family="JetBrains Mono",
+            family="Malgun Gothic",
+            va="center",
         )
-    ax_bars.set_xlim(0, max(stages) * 1.20)
-    ax_bars.set_yticks([])
-    ax_bars.set_xticks([])
-    for spine in ["top", "right", "left", "bottom"]:
-        ax_bars.spines[spine].set_visible(False)
 
-    # Footer — bottom right to avoid overlap with stats
-    fig.text(
-        0.55, 0.06,
-        "civilai.kr  ·  자연어 질의 가능한 데이터 자산 (OpenCrab 친화)",
+    # Footer
+    ax.text(
+        0.05, 0.04,
+        f"83 카드  ·  KDS / KCS / BF / KOSHA  ·  자연어 질의 가능 (OpenCrab)",
         fontsize=11,
         color=MUTED,
         family="Malgun Gothic",
+    )
+    ax.text(
+        0.95, 0.04,
+        "civilai.kr",
+        fontsize=11,
+        color=MUTED,
+        family="Malgun Gothic",
+        ha="right",
+        fontweight="bold",
     )
 
     out = DIR / "social-preview.png"
