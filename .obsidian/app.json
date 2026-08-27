@@ -1,0 +1,14 @@
+{
+  "showLineNumber": true,
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": false,
+  "promptDelete": true,
+  "trashOption": "system",
+  "defaultViewMode": "preview",
+  "userIgnoreFilters": [
+    "candidates.jsonl"
+  ]
+}
